@@ -15,6 +15,7 @@ export class CharacterDetail extends Component {
   }
 
   render() {
+    
     const {character} = this.state;
     // prevent the problem if react tries to render the component when it's null
     if(!character) {
@@ -23,6 +24,7 @@ export class CharacterDetail extends Component {
     return (
       <div>
         <h1 className="title">{character.name}</h1>
+        <img className="characterImage" src={require (character.image)} alt={character.name}></img>
         <h2 className="subtitle">
           <Link to={`/arenas/${character.arena.id}`}>{character.arena.name}</Link>
         </h2>
