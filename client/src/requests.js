@@ -42,11 +42,11 @@ export async function loadCharacter(id) {
     character(id: $id) {
       id
       name
-      attacks
       image
       arena {
         id
         name
+        description
       }
     }
   }`

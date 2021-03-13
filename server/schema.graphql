@@ -2,7 +2,7 @@ type Query {
     arena(id: ID!): Arena
     # here we need to write data that returns data used by our job board application
     characters: [Character]
-    # use paranthesis to pass the arguments and don't forget to declare it's type then declare the return type for the field
+    # use parenthesis to pass the arguments and don't forget to declare it's type then declare the return type for the field
     character(id: ID!): Character
    
 }
@@ -18,6 +18,5 @@ type Character {
     id: ID!
     name: String
     arena: Arena
-    attacks: String
     image: String
 }

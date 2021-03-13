@@ -8,7 +8,6 @@ export class CharacterDetail extends Component {
     this.state = {character: null};
   }
 
-  
   async componentDidMount() {
     const {characterId} = this.props.match.params;
     const character = await loadCharacter(characterId);
@@ -17,13 +16,17 @@ export class CharacterDetail extends Component {
 
   render() {
     const {character} = this.state;
+    // prevent the problem if react tries to render the component when it's null
+    if(!character) {
+      return null;
+    }
     return (
       <div>
         <h1 className="title">{character.name}</h1>
         <h2 className="subtitle">
-          <Link to={`/arenas/${character.arena.id}`}>{character.arena.name}</Link>
+          <Link to={`/companies/${character.arena.id}`}>{character.arena.name}</Link>
         </h2>
-        {/* <div className="box">{character.image}</div> */}
+        {/* <div className="box">{job.description}</div> */}
       </div>
     );
   }
