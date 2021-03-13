@@ -9,6 +9,7 @@ async function graphqlRequest(query, variables = {}) {
     });
     // get the response body by parsing the response as json
     const responseBody = await response.json();
+    console.log(responseBody);
     // to check if there is an error in the graphql
     if (responseBody.errors) {
       // using the map function because the errors are an array and we want to see all of the errors, show them all in a string with join.
@@ -20,6 +21,7 @@ async function graphqlRequest(query, variables = {}) {
 }
 
 export async function loadArena(id) {
+  console.log(id);
   const query = `query ArenaQuery($id: ID!) {
     arena(id: $id) {
       id

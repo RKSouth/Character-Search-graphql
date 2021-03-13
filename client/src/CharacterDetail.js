@@ -24,7 +24,7 @@ export class CharacterDetail extends Component {
       <div>
         <h1 className="title">{character.name}</h1>
         <h2 className="subtitle">
-          <Link to={`/companies/${character.arena.id}`}>{character.arena.name}</Link>
+          <Link to={`/arenas/${character.arena.id}`}>{character.arena.name}</Link>
         </h2>
         {/* <div className="box">{job.description}</div> */}
       </div>

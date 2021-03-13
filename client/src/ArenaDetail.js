@@ -16,7 +16,6 @@ export class ArenaDetail extends Component {
 
   render() {
     const {arena} = this.state;
-    console.log({arena});
     // if there is no arena don't return stuff
     if (!arena) {
       return null;
@@ -25,7 +24,7 @@ export class ArenaDetail extends Component {
       <div>
         <h1 className="title">{arena.name}</h1>
         <div className="box">{arena.description}</div>
-        <h5 className="title is-5">Jobs At {arena.name}</h5>
+        <h5 className="title is-5">Characters At {arena.name}</h5>
         <CharacterList characters={arena.characters}/>
       </div>
     );
