@@ -16,6 +16,7 @@ export class ArenaDetail extends Component {
 
   render() {
     const {arena} = this.state;
+    console.log({arena});
     // if there is no arena don't return stuff
     if (!arena) {
       return null;
