@@ -1,4 +1,6 @@
 type Query {
+    attack(id: ID!): Attack
+    attacks: [Attack]
     arena(id: ID!): Arena
     # here we need to write data that returns data used by our job board application
     characters: [Character]
@@ -19,12 +21,12 @@ type Character {
     name: String
     arena: Arena
     image: String
-    attacks: [Attacks]
+    attack: [Attack]
 }
 
-type Attacks {
+type Attack {
     id: ID!
     name: String
     type: String
-    characters: [Character]
+    character: Character
 }
