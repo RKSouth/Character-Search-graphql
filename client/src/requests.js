@@ -49,9 +49,13 @@ export async function loadCharacter(id) {
         name
         description
       }
+      attack {
+        name
+        id
+        type
+      }
     }
   }`
-
   const {character} =  await graphqlRequest(query, {id});
   // and then return a value
   return character;
@@ -67,6 +71,11 @@ export async function loadCharacter(id) {
           id
           name
           description
+        }
+        attack {
+          name
+          id
+          type
         }
       } 
     }`

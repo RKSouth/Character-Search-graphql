@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { loadCharacter } from './requests';
+import { AttackList } from './AttackList'
 import './style.css';
 
 
@@ -8,17 +9,22 @@ export class CharacterDetail extends Component {
   constructor(props) {
     super(props);
     this.state = {character: null};
+    this.state = {attack: []};
   }
 
   async componentDidMount() {
     const {characterId} = this.props.match.params;
     const character = await loadCharacter(characterId);
     this.setState({character});
-    console.log({character})
+    const attack = [character.attack];
+    this.setState({attack});
+    console.log({character});
+    console.log({attack})
   }
 
   render() {
     const {character} = this.state;
+    const {attack} = this.state;
     // prevent the problem if react tries to render the component when it's null
     if(!character) {
       return null;
@@ -30,7 +36,7 @@ export class CharacterDetail extends Component {
         <h2 className="subtitle">
           <Link to={`/arenas/${character.arena.id}`}>{character.arena.name}</Link>
         </h2>
-        {/* <div className="box">{job.description}</div> */}
+        <AttackList attack={attack}/>
       </div>
     );
   }
