@@ -26,7 +26,7 @@ export class CharacterDetail extends Component {
     return (
       <div>
         <h1 className="title">{character.name}</h1>
-        <img className="characterImage" src={"./Images-char/" + character.image} alt={character.name}/>
+        <img className="characterImage" src={"../Images-char/" + character.image} alt={character.name}/>
         <h2 className="subtitle">
           <Link to={`/arenas/${character.arena.id}`}>{character.arena.name}</Link>
         </h2>
