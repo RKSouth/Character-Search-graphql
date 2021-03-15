@@ -36,6 +36,7 @@ export class App extends Component {
               <Switch>
                 <Route exact path="/" component={CharacterBoard} />
                 <Route path="/arenas/:arenaId" component={ArenaDetail} />
+                <Route path="/attacks/:attackId" component={AttackDetail} />
                 <Route exact path="/jobs/new" component={JobForm} />
                 <Route path="/characters/:characterId" component={CharacterDetail} />
                 <Route exact path="/login" render={() => <LoginForm onLogin={this.handleLogin.bind(this)} />} />

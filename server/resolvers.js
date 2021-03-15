@@ -19,5 +19,10 @@ const Character = {
     arena: (character) => db.arenas.get(character.arenaId)
 }
 
+const Attacks = {
+    attacks: (character) => db.character.list()
+        .filter((attacks) => attacks.characterId === character.id)
+}
+
 // make sure all the objects are being exported here
-module.exports = { Query, Arena, Character }
+module.exports = { Query, Arena, Character,Attacks }

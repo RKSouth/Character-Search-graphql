@@ -5,5 +5,6 @@ const store = new DataStore('./data');
 module.exports = {
   arenas: store.collection('arenas'),
   users: store.collection('users'),
-  characters: store.collection('characters')
+  characters: store.collection('characters'),
+  attacks: store.collection('attacks')
 };

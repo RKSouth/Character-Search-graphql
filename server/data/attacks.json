@@ -1,0 +1,415 @@
+[
+    {
+      "id": "QQWRJ-s323",
+      "name": "Bat DANCE",
+      "type": "Shock",
+      "characterId":"1"
+    },
+    {
+      "id": "Grht-584j",
+      "name": "Bat Mobile",
+      "type": "Pounding",
+      "characterId":"1"
+    }
+    ,
+    {
+      "id": "F56g-3dK",
+      "name": "Brooding and Smouldering",
+      "type": "Infuriating",
+      "characterId":"1"
+    }
+    ,
+    {
+      "id": "thea-343",
+      "name": "Daddy Issues",
+      "type": "Empathy",
+      "characterId":"1"
+    }
+    ,
+    {
+      "id": "Wssd-544",
+      "name": "Ask Alfred",
+      "type": "Assist",
+      "characterId":"1"
+    }
+    ,
+    {
+      "id": "VsA-0GGG",
+      "name": "Drop Leaves",
+      "type": "Shock",
+      "characterId":"2"
+    }
+    ,
+    {
+      "id": "AASD-4585",
+      "name": "Leak Water",
+      "type": "Pounding",
+      "characterId":"2"
+      
+    }
+    ,
+    {
+      "id": "Zsad-TF33",
+      "name": "Make Clones",
+      "type": "Infuriating",
+      "characterId":"2"
+    }
+    ,
+    {
+      "id": "Z22P-PEE3",
+      "name": "Shrivel",
+      "type": "Empathy",
+      "characterId":"2"
+    }
+    ,
+    {
+      "id": "N5U-43RSE",
+      "name": "Growth Spurt",
+      "type": "Overwhelm",
+      "characterId":"2"
+    }
+    ,
+    {
+      "id": "F5F-wE36",
+      "name": "Dunks ON YOU",
+      "type": "Pounding",
+      "characterId":"3"
+    }
+    ,
+    {
+      "id": "kF44-99jh",
+      "name": "Dad Jokes",
+      "type": "Empathy",
+      "characterId":"3"
+    }
+    ,
+    {
+      "id": "D343g-wh88",
+      "name": "Tan Suit",
+      "type": "Shock",
+      "characterId":"3"
+    }
+    ,
+    {
+      "id": "mm44-PP77",
+      "name": "Swagger",
+      "type": "Overwhelm",
+      "characterId":"3"
+    }
+    ,
+    {
+      "id": "AAw2-yt44",
+      "name": "Ask Michelle",
+      "type": "Overwhelm",
+      "characterId":"3"
+    }
+    ,
+    {
+      "id": "bbEE-212G",
+      "name": "Sneaky Sneaky",
+      "type": "Overwhelm",
+      "characterId":"4"
+    }
+    ,
+    {
+      "id": "GhF4-78mN",
+      "name": "Surprise! Behind You",
+      "type": "Overwhelm",
+      "characterId":"4"
+    }
+    ,
+    {
+      "id": "V3cS-8H5",
+      "name": "Nunchucks",
+      "type": "Overwhelm",
+      "characterId":"4"
+    }
+    ,
+    {
+      "id": "lOT-543",
+      "name": "Karate Chop",
+      "type": "Overwhelm",
+      "characterId":"4"
+    }
+    ,
+    {
+      "id": "GDa-1254",
+      "name": "Roundhouse Kick",
+      "type": "Overwhelm",
+      "characterId":"4"
+    }
+    ,
+    {
+      "id": "Rsd-494",
+      "name": "Break Check",
+      "type": "Overwhelm",
+      "characterId":"5"
+    }
+    ,
+    {
+      "id": "iUh6-34KL",
+      "name": "Cut Off",
+      "type": "Overwhelm",
+      "characterId":"5"
+    }
+    ,
+    {
+      "id": "Tou0-89GH",
+      "name": "Surprise Turn",
+      "type": "Shock",
+      "characterId":"5"
+    }
+    ,
+    {
+      "id": "aeS2-P675",
+      "name": "Change 3 Lanes at once",
+      "type": "Overwhelm",
+      "characterId":"5"
+    }
+    ,
+    {
+      "id": "x23R-39Wq",
+      "name": "Change lanes into You",
+      "type": "Blunt Force",
+      "characterId":"5"
+    }
+    ,
+    {
+      "id": "cV90-8Tr4",
+      "name": "Butt Cramps",
+      "type": "Overwhelm",
+      "characterId":"6"
+    }
+    ,
+    {
+      "id": "uIf-3232",
+      "name": "Toe Stub",
+      "type": "Blunt Force",
+      "characterId":"6"
+    }
+    ,
+    {
+      "id": "kL54-oPo3",
+      "name": "Dehydration",
+      "type": "Overwhelm",
+      "characterId":"6"
+    }
+    ,
+    {
+      "id": "xSw32-dFV4",
+      "name": "Wack your pet with the pedals",
+      "type": "Empathy",
+      "characterId":"6"
+    }
+    ,
+    {
+      "id": "F34c-PZ216",
+      "name": "Fall Off",
+      "type": "Pounding",
+      "characterId":"6"
+    }
+    ,
+    {
+      "id": "Dw4T-66J6",
+      "name": "Ketchup/Mustard on Your Shirt",
+      "type": "Overwhelm",
+      "characterId":"7"
+    }
+    ,
+    {
+      "id": "GDa-1254",
+      "name": "Too Good to Resist",
+      "type": "Overwhelm",
+      "characterId":"7"
+    }
+    ,
+    {
+      "id": "jdhs-RH34",
+      "name": "Not enough bun son",
+      "type": "Overwhelm",
+      "characterId":"7"
+    }
+    ,
+    {
+      "id": "Ha40-3ns",
+      "name": "Food Poisoning",
+      "type": "Overwhelm",
+      "characterId":"7"
+    }
+    ,
+    {
+      "id": "fe04-fj3s",
+      "name": "Can't Have Just One",
+      "type": "Overwhelm",
+      "characterId":"7"
+    }
+    ,
+    {
+      "id": "D344-SAAM",
+      "name": "Blaze Up",
+      "type": "Overwhelm",
+      "characterId":"8"
+    }
+    ,
+    {
+      "id": "Fsqw-4dd3",
+      "name": "Sorry",
+      "type": "Overwhelm",
+      "characterId":"8"
+    }
+    ,
+    {
+      "id": "LJJ4-t3az",
+      "name": "Weird Laughing",
+      "type": "Overwhelm",
+      "characterId":"8"
+    }
+    ,
+    {
+      "id": "lgjr-582s",
+      "name": "Munchies",
+      "type": "Overwhelm",
+      "characterId":"8"
+    }
+    ,
+    {
+      "id": "vbOG-34SS",
+      "name": "Bagged Milk",
+      "type": "Overwhelm",
+      "characterId":"8"
+    }
+    ,
+    {
+      "id": "Plk-43sd",
+      "name": "Never Going to Give You Up",
+      "type": "Overwhelm",
+      "characterId":"9"
+    }
+    ,
+    {
+      "id": "ZKa57b",
+      "name": "Never Going to Let You Down",
+      "type": "Overwhelm",
+      "characterId":"9"
+    }
+    ,
+    {
+      "id": "5sv69v",
+      "name": "Never Going to Make You Cry",
+      "type": "Overwhelm",
+      "characterId":"9"
+    }
+    ,
+    {
+      "id": "DSEJ-LK43DC",
+      "name": "Never Going to Say Goodbye",
+      "type": "Overwhelm",
+      "characterId":"9"
+    }
+    ,
+    {
+      "id": "KSA-3d3f",
+      "name": "lo-fi beats",
+      "type": "Overwhelm",
+      "characterId":"10"
+    }
+    ,
+    {
+      "id": "QwE-2Yj",
+      "name": "No More Lowes!",
+      "type": "Overwhelm",
+      "characterId":"10"
+    }
+    ,
+    {
+      "id": "Pkd3-4VVB",
+      "name": "Resistance Bands",
+      "type": "Overwhelm",
+      "characterId":"10"
+    }
+    ,
+    {
+      "id": "VBD9-aje9",
+      "name": "Fitness",
+      "type": "Overwhelm",
+      "characterId":"10"
+    }
+    ,
+    {
+      "id": "g999-kfGH",
+      "name": "Bad Pancake",
+      "type": "Overwhelm",
+      "characterId":"10"
+    }
+    ,
+    {
+      "id": "d888-JA77",
+      "name": "HYPNOTIZE",
+      "type": "Overwhelm",
+      "characterId":"11"
+    }
+    ,
+    {
+      "id": "jAja-Ja44",
+      "name": "STUPIFY",
+      "type": "Overwhelm",
+      "characterId":"11"
+    }
+    ,
+    {
+      "id": "lALa-00fs",
+      "name": "MESMERIZE",
+      "type": "Overwhelm",
+      "characterId":"11"
+    }
+    ,
+    {
+      "id": "MiS-0ULa",
+      "name": "CONFOUND",
+      "type": "Overwhelm",
+      "characterId":"11"
+    }
+    ,
+    {
+      "id": "mO0n-tAn4",
+      "name": "BEWILDER",
+      "type": "Overwhelm",
+      "characterId":"11"
+    }
+    ,
+    {
+      "id": "hAha-HahA",
+      "name": "DODGE THE BALL!",
+      "type": "Blunt Force",
+      "characterId":"12"
+    }
+    ,
+    {
+      "id": "Gada23-285",
+      "name": "RUN LAPS",
+      "type": "Pounding",
+      "characterId":"12"
+    }
+    ,
+    {
+      "id": "RaCh-43LL",
+      "name": "CLIMB THE ROPE",
+      "type": "Overwhelm",
+      "characterId":"12"
+    }
+    ,
+    {
+      "id": "KaN-D1c3",
+      "name": "SEX ED",
+      "type": "Shock",
+      "characterId":"12"
+    }
+    ,
+    {
+      "id": "Ax3L-P00",
+      "name": "Being Creepy",
+      "type": "Overwhelm",
+      "characterId":"12"
+    }
+
+  ]

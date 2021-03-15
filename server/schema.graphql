@@ -19,4 +19,12 @@ type Character {
     name: String
     arena: Arena
     image: String
+    attacks: [Attacks]
+}
+
+type Attacks {
+    id: ID!
+    name: String
+    type: String
+    characters: [Character]
 }

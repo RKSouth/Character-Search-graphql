@@ -15,6 +15,7 @@ export class CharacterList extends Component {
     const name = character.arena ? `${character.name} at ${character.arena.name}` : character.name;
     return (
       <li className="media" key={character.id}>
+        <img className="characterImage" src={"../Images-char/" + character.image} alt={character.name}/>
         <div className="media-content">
           <Link to={`/characters/${character.id}`}>{name}</Link>
         </div>
