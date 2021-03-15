@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { loadCharacter } from './requests';
+import './style.css';
+
 
 export class CharacterDetail extends Component {
   constructor(props) {
@@ -12,10 +14,10 @@ export class CharacterDetail extends Component {
     const {characterId} = this.props.match.params;
     const character = await loadCharacter(characterId);
     this.setState({character});
+    console.log({character})
   }
 
   render() {
-    
     const {character} = this.state;
     // prevent the problem if react tries to render the component when it's null
     if(!character) {
@@ -24,7 +26,7 @@ export class CharacterDetail extends Component {
     return (
       <div>
         <h1 className="title">{character.name}</h1>
-        <img className="characterImage" src={require (character.image)} alt={character.name}></img>
+        <img className="characterImage" src={"./Images-char/" + character.image} alt={character.name}/>
         <h2 className="subtitle">
           <Link to={`/arenas/${character.arena.id}`}>{character.arena.name}</Link>
         </h2>
