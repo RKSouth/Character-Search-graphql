@@ -4,10 +4,12 @@ export class AttackList extends Component {
   render() {
     const {attack} = this.props;
     console.log({attack});
-    return (
+    return (<div>
+      <h2><strong>Attack - - - and Type </strong></h2>
       <ul className="box">
         {attack.map(this.renderAttack.bind(this))}
       </ul>
+      </div>
     );
   }
 
@@ -15,7 +17,7 @@ export class AttackList extends Component {
     const name = attack.character ? `${attack.name} at ${attack.character.name}` : attack.name;
     return (
       <li key={attack.id}>
-      {name} 
+      <strong>{name}</strong> - - - -  {attack.type}
       </li>
     );
   }
