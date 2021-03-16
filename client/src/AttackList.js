@@ -14,8 +14,8 @@ export class AttackList extends Component {
   renderAttack(attack) {
     const name = attack.character ? `${attack.name} at ${attack.character.name}` : attack.name;
     return (
-      <li key={attack}>
-      {name} {attack.type}
+      <li key={attack.id}>
+      {name} 
       </li>
     );
   }

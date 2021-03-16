@@ -36,7 +36,7 @@ export class CharacterDetail extends Component {
         <h2 className="subtitle">
           <Link to={`/arenas/${character.arena.id}`}>{character.arena.name}</Link>
         </h2>
-        <AttackList attack={attack}/>
+        <AttackList attack={character.attack}/>
       </div>
     );
   }
