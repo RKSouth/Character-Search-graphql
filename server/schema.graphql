@@ -8,6 +8,10 @@ type Query {
     character(id: ID!): Character
    
 }
+type Mutation {
+    createCharacter(input: CreateCharacterInput): Character
+    createUser(input: CreateUserInput): User
+}
 
 type Arena {
     id: ID!
@@ -29,4 +33,23 @@ type Attack {
     name: String
     type: String
     character: Character
+}
+
+type User {
+    id: ID!
+    email: String
+    password: String
+    arena: Arena
+}
+
+input CreateCharacterInput {
+    name: String
+    image: String
+    attack: [Attack]
+}
+
+input CreateUserInput {
+    name: String
+    email: String
+    password: String
 }
