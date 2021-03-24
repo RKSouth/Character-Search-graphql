@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export class CharacterForm extends Component {
   constructor(props) {
     super(props);
-    this.state = {title: '', description: ''};
+    this.state = {name: '', image: '', attack: []};
   }
 
   handleChange(event) {
@@ -17,24 +17,39 @@ export class CharacterForm extends Component {
   }
 
   render() {
-    const {title, description} = this.state;
+    const {name, image, attack} = this.state;
     return (
       <div>
-        <h1 className="title">New Job</h1>
+        <h1 className="title">New Character</h1>
         <div className="box">
           <form>
             <div className="field">
-              <label className="label">Title</label>
+              <label className="label">Name</label>
               <div className="control">
-                <input className="input" type="text" name="title" value={title}
+                <input className="input" type="text" name="name" value={name}
                   onChange={this.handleChange.bind(this)} />
               </div>
             </div>
             <div className="field">
-              <label className="label">Description</label>
+              <label className="label">Image (must be in http://) format</label>
               <div className="control">
-                <textarea className="input" style={{height: '10em'}}
-                  name="description" value={description} onChange={this.handleChange.bind(this)} />
+                <textarea className="input" 
+                  name="image" value={image} onChange={this.handleChange.bind(this)} />
+              </div>
+            </div>
+            <div className="field">
+              <label className="label">Attacks (must include 5 attacks)</label>
+              <div className="control">
+                <textarea className="input" 
+                  name="attack" value={attack} onChange={this.handleChange.bind(this)} />
+                   <textarea className="input" 
+                  name="attack" value={attack} onChange={this.handleChange.bind(this)} />
+                   <textarea className="input" 
+                  name="attack" value={attack} onChange={this.handleChange.bind(this)} />
+                   <textarea className="input" 
+                  name="attack" value={attack} onChange={this.handleChange.bind(this)} />
+                   <textarea className="input" 
+                  name="attack" value={attack} onChange={this.handleChange.bind(this)} />
               </div>
             </div>
             <div className="field">

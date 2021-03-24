@@ -21,6 +21,7 @@ export class NavBar extends Component {
           <div className="navbar-start">
             <Link className="navbar-item" to="/">Home</Link>
             <Link className="navbar-item" to="/login">Login</Link>
+            <Link className="navbar-item" to="/register">New User</Link>
           </div>
         </nav>
       );

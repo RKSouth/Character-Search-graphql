@@ -7,6 +7,7 @@ import { CharacterBoard } from './CharacterBoard';
 import { CharacterDetail } from './CharacterDetail';
 import { CharacterForm } from './CharacterForm';
 import { NavBar } from './NavBar';
+import { Register } from './Register';
 
 export class App extends Component {
   constructor(props) {
@@ -39,6 +40,7 @@ export class App extends Component {
                 {/* <Route path="/attacks/:attackId" component={AttackList} /> */}
                 <Route exact path="/characters/new" component={CharacterForm} />
                 <Route path="/characters/:characterId" component={CharacterDetail} />
+                <Route exact path="/register" component={Register}  />
                 <Route exact path="/login" render={() => <LoginForm onLogin={this.handleLogin.bind(this)} />} />
               </Switch>
             </div>
