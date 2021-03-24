@@ -1,19 +1,67 @@
 img {
     height: 100px;
     width: 100px;
-    margin: 3%
+    margin: 3%;
+    
 }
 
 h2{
     margin: 3%;
 }
 
-a, navbar-item, a.navbar-item {
-    color: black;
-   background-color: white;
+ navbar-item, a.navbar-item {
+    color: rgb(97, 97, 97);
+   background-color: rgb(163, 163, 163);
+}
+
+a {
+    color:rgb(97, 97, 97);
+}
+
+a :hover {
+    color:black;
+    font-style: oblique;
 }
 
 a.navbar-item, navbar-item :hover{
-    color: white;
+    color: black !important;
+    background-color: rgb(97, 97, 97);
+}
+
+.box {
+    background-color: rgb(228, 228, 228);
+    box-shadow: 0px 3px 2px -2px rgb(0 0 0 / 25%),
+    0px 2px 2px 0px rgb(0 0 0 / 25%), 0px 2px 4px 0px rgb(0 0 0 / 25%);
+}
+
+.navbar {
+    background-color: rgb(97, 97, 97);
+   
+}
+
+.title {
+    color:white;
+  
+}
+
+html {
+    background-color: rgb(97, 97, 97);
+    background-size:cover
+}
+
+.button.is-link {
     background-color: black;
+}
+
+
+
+.arenaClick {
+    background-color:transparent !important;
+    color: black;
+    box-shadow: 0px 3px 2px -2px rgb(0 0 0 / 25%),
+    0px 2px 2px 0px rgb(0 0 0 / 25%), 0px 2px 4px 0px rgb(0 0 0 / 25%);
+}
+
+.button.is-link :hover {
+    background-color: rgb(65, 65, 65) !important;
 }

@@ -8,6 +8,7 @@ import { CharacterDetail } from './CharacterDetail';
 import { CharacterForm } from './CharacterForm';
 import { NavBar } from './NavBar';
 import { Register } from './Register';
+import "./style.css"
 
 export class App extends Component {
   constructor(props) {
