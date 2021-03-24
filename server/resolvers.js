@@ -33,7 +33,7 @@ const Character = {
     // the arena comes for the parent (character) and we want to get the arena with same id as the one listed with the character
     arena: (character) => db.arenas.get(character.arenaId),
     attack: (character) => db.attacks.list()
-        .filter((attack) => attack.characterId === character.id)
+    .filter((attack) => attack.characterId === character.id)
 }
 
 const Attack = {
