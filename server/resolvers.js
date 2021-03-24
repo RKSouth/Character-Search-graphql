@@ -10,6 +10,19 @@ const Query = {
     characters: () => db.characters.list()
 }
 
+const Mutation = {
+    createCharacter: (root, {input}, {user}) => {
+        // console.log('user:', user);
+        // return null;
+        if(!user){
+            throw new Error('Unauthorized');
+        }
+        // changed input to ...input to get all of the data from db.characters
+       const id = db.characters.create({...input, arenaId: user.arenaId});
+       return db.characters.get(id);
+    }
+};
+
 const Arena = {
     characters: (arena) => db.characters.list()
         .filter((character) => character.arenaId === arena.id)
@@ -28,4 +41,4 @@ const Attack = {
 }
 
 // make sure all the objects are being exported here
-module.exports = { Query, Arena, Character, Attack }
+module.exports = { Query, Mutation, Arena, Character, Attack }
