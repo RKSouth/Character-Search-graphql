@@ -5,7 +5,7 @@ import { ArenaDetail } from './ArenaDetail';
 import { LoginForm } from './LoginForm';
 import { CharacterBoard } from './CharacterBoard';
 import { CharacterDetail } from './CharacterDetail';
-import { JobForm } from './JobForm';
+import { CharacterForm } from './CharacterForm';
 import { NavBar } from './NavBar';
 
 export class App extends Component {
@@ -37,7 +37,7 @@ export class App extends Component {
                 <Route exact path="/" component={CharacterBoard} />
                 <Route path="/arenas/:arenaId" component={ArenaDetail} />
                 {/* <Route path="/attacks/:attackId" component={AttackList} /> */}
-                <Route exact path="/jobs/new" component={JobForm} />
+                <Route exact path="/characters/new" component={CharacterForm} />
                 <Route path="/characters/:characterId" component={CharacterDetail} />
                 <Route exact path="/login" render={() => <LoginForm onLogin={this.handleLogin.bind(this)} />} />
               </Switch>

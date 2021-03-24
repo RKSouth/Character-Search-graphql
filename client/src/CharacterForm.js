@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class JobForm extends Component {
+export class CharacterForm extends Component {
   constructor(props) {
     super(props);
     this.state = {title: '', description: ''};

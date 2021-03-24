@@ -7,3 +7,13 @@ img {
 h2{
     margin: 3%;
 }
+
+a, navbar-item, a.navbar-item {
+    color: black;
+   background-color: white;
+}
+
+a.navbar-item, navbar-item :hover{
+    color: white;
+    background-color: black;
+}
