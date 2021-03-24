@@ -22,8 +22,12 @@ app.use(cors(), bodyParser.json(), expressJwt({
 const typeDefs = gql(fs.readFileSync('./schema.graphql', {encoding: 'utf8'}));
 
 const resolvers = require('./resolvers')
+// context object object from resolvers and then extracting
+// information from the http request and making it visible to our resolvers
+const context = ({req}) => ({user: req.user && db.users.get(req.user.sub)}) 
+
 // creating a new apollo server instance, passing a configuration object with our type defs and resolvers
-const apolloServer = new ApolloServer({ typeDefs, resolvers});
+const apolloServer = new ApolloServer({ typeDefs, resolvers, context});
 // plugging our apollo server into our existing express application
 // optionally we can set a path that is where we want to expose the graphql endpoint on our server
 apolloServer.applyMiddleware({app, path: '/graphql'  })
