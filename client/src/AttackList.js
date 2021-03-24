@@ -9,11 +9,8 @@ export class AttackList extends Component {
         <tr>
         <th>Attack</th>
         <th>Type</th>
-        </tr>
-
-      
+        </tr>      
         {attack.map(this.renderAttack.bind(this))}
-      
       </table>
       </div>
     );

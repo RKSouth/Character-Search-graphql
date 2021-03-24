@@ -34,7 +34,7 @@ export class CharacterDetail extends Component {
         <h1 className="title">{character.name}</h1>
         <img className="characterImage" src={"../Images-char/" + character.image} alt={character.name}/>
         <h2 className="subtitle">
-          <Link className="arenaClick" to={`/arenas/${character.arena.id}`}>{character.arena.name}</Link>
+          <Link className="arenaClick" to={`/arenas/${character.arena.id}`}>Arena: {character.arena.name}</Link>
         </h2>
         <AttackList attack={character.attack}/>
       </div>
