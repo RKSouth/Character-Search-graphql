@@ -5,7 +5,7 @@ export class CharacterList extends Component {
   render() {
     const {characters} = this.props;
     return (
-      <ul className="box">
+      <ul >
         {characters.map(this.renderCharacter.bind(this))}
       </ul>
     );
@@ -14,11 +14,11 @@ export class CharacterList extends Component {
   renderCharacter(character) {
     const name = character.arena ? `${character.name} at ${character.arena.name}` : character.name;
     return (
-      <li className="media" key={character.id}>
-        <img className="characterImage" src={"../Images-char/" + character.image} alt={character.name}/>
-        <div className="media-content">
+      <li className="media" className="box" key={character.id}>
+         <div className="media-content">
           <Link to={`/characters/${character.id}`}>{name}</Link>
         </div>
+        <img className="characterImage" src={"../Images-char/" + character.image} alt={character.name}/>
       </li>
     );
   }

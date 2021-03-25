@@ -32,6 +32,7 @@ a.navbar-item, navbar-item :hover{
     background-color: rgb(228, 228, 228);
     box-shadow: 0px 3px 2px -2px rgb(0 0 0 / 25%),
     0px 2px 2px 0px rgb(0 0 0 / 25%), 0px 2px 4px 0px rgb(0 0 0 / 25%);
+    /* width:fit-content; */
 }
 
 .navbar {
@@ -62,7 +63,9 @@ html {
     color: black;
     box-shadow: 0px 3px 2px -2px rgb(0 0 0 / 25%),
     0px 2px 2px 0px rgb(0 0 0 / 25%), 0px 2px 4px 0px rgb(0 0 0 / 25%);
+    padding: 3px;
 }
+
 
 .button.is-link :hover {
     background-color: rgb(65, 65, 65) !important;
