@@ -9,6 +9,7 @@ type Query {
    
 }
 type Mutation {
+    CreateAttack(input: CreateAttackInput): Attack
     createCharacter(input: CreateCharacterInput): Character
     createUser(input: CreateUserInput): User
 }
@@ -43,9 +44,15 @@ type User {
 }
 
 input CreateCharacterInput {
-    name: String
-    image: String
-    attack: [Attack]
+    name: String!
+    image: String!
+    attack: [CreateAttackInput]
+
+}
+
+input CreateAttackInput {
+    name: String!
+    type: String!
 }
 
 input CreateUserInput {
@@ -53,3 +60,4 @@ input CreateUserInput {
     email: String
     password: String
 }
+

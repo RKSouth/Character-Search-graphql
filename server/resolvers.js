@@ -12,14 +12,15 @@ const Query = {
 
 const Mutation = {
     createCharacter: (root, {input}, {user}) => {
-        // console.log('user:', user);
+         console.log('user:', user);
         // return null;
         if(!user){
             throw new Error('Unauthorized');
         }
         // changed input to ...input to get all of the data from db.characters
-       const id = db.characters.create({...input, arenaId: user.arenaId});
+       const id = db.characters.create({...input, arenaId: user.arenaId });
        return db.characters.get(id);
+     
     }
 };
 
